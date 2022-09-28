@@ -1,0 +1,53 @@
+.card {
+    /* Meeting List/Item */
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+    width: 330px;
+    /* Gray/700 */
+    background: #1B1E28;
+    border: 1px solid #41454B;
+    border-radius: 8px;
+    /* Inside auto layout */
+    flex: none;
+    gap: 4px;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 10px;
+    &:hover {
+        background: #282B32;
+    }
+    &-isactive{
+        background: #41454B !important;
+    }
+
+    &-title {
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    &-timer {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        color: #9DA3AB;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+}
